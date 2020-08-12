@@ -45,3 +45,14 @@ include::https://raw.githubusercontent.com/feelpp/asciidoctor-remote-include-pro
 include::https://raw.githubusercontent.com/feelpp/feelpp/develop/feelpp/quickstart/qs_laplacian.cpp[tag=env]
 ----
 ----
+
+More details are available in the https://feelpp.github.io/asciidoctor-remote-include-processor/adoc-rip/latest/index.html[documentation].
+
+== Acknowledgments
+
+* https://github.com/djencks[@Djenks] on Gitter Antora/users for his many suggestions and explanations
+* https://github.com/Mogztter[@Mozgtter] for https://github.com/Mogztter/asciidoctor-emoji[asciidoctor-emoji] which served as the template for this extension
+
+and of course
+
+* https://github.com/mojavelinux[@mojavelinux] for the awesome work he does on {antora} and {adoc}.
