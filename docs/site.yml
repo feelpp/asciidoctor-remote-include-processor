@@ -6,7 +6,7 @@ content:
   sources:
   - url: https://github.com/feelpp/asciidoctor-remote-include-processor.git
     branches: master
-    start_path: .
+    start_path: docs
 ui:
   bundle:
     url: https://gitlab.com/feelpp/antora-ui-default/-/jobs/artifacts/feelpp/raw/build/ui-bundle.zip?job=bundle-stable
