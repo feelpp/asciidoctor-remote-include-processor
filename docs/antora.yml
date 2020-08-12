@@ -1,0 +1,6 @@
+name: adoc-rip
+title: Asciidoctor Remote Include Processor
+version: latest
+nav:
+- modules/ROOT/nav.adoc
+

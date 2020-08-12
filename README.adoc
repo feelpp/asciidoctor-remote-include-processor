@@ -2,3 +2,10 @@
 
 Remote include processor extension for asciidoctor
 
+----
+.code here
+[source,cpp]
+----
+include::https://raw.githubusercontent.com/feelpp/feelpp/develop/feelpp/quickstart/qs_laplacian.cpp[tag=env]
+----
+----

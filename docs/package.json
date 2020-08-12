@@ -1,0 +1,16 @@
+{
+  "description": "Antora Builder",
+  "scripts": {
+    "clean-build": "npm run clean-install;npm run build",
+    "clean-install": "rm -rf node_modules/ .cache/ package-lock.json ;npm i --cache=.cache/npm",
+    "build:local": "node_modules/.bin/antora site-dev.yml --stacktrace --fetch",
+    "build": "node_modules/.bin/antora site.yml --stacktrace --fetch",
+    "preview:build": "node_modules/.bin/antora site-dev.yml --stacktrace --fetch; node-srv -p 8010 build/site"
+  },
+  "devDependencies": {
+    "@antora/cli": "^2.3.3",
+    "@antora/site-generator-default": "^2.3.3",
+    "@feelpp/asciidoctor-remote-include-processor": "^0.0.5",
+    "node-srv": "^3.0.2"
+  }
+}

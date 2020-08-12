@@ -1,0 +1,24 @@
+site:
+  title: Asciidoctor Remote Include Processor Documentation
+  url: https://feelpp.github.io/asciidoctor-remote-include-processor
+  start_page: adoc-rip::index.adoc
+content:
+  sources:
+  - url: ..
+    branches: master
+    start_path: docs
+ui:
+  bundle:
+    url: https://gitlab.com/feelpp/antora-ui-default/-/jobs/artifacts/feelpp/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true
+asciidoc:
+  attributes:
+    feelpp-version: 0.108
+    project_version: 0.108
+    deploymentRoot: ""
+    numbered: true
+    hide-uri-scheme: true
+    feelpp: Feel++
+  extensions:
+    - "@feelpp/asciidoctor-remote-include-processor"
+
