@@ -1,0 +1,50 @@
+{
+  "name": "@feelpp/asciidoctor-remote-include-processor",
+  "version": "0.0.2",
+  "description": "Asciidoctor remote include processor extension",
+  "main": "dist/node/asciidoctor-remote-include-processor.js",
+  "browser": "dist/browser/asciidoctor-remote-include-processor.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "mocha test/**.js",
+    "lint": "standard src/**.js test/**.js",
+    "clean": "rm -rf dist/*",
+    "dist": "npm run clean && npm run dist:browser && npm run dist:node",
+    "dist:browser": "mkdir -p dist/browser && browserify src/asciidoctor-remote-include-processor.js --standalone AsciidoctorEmoji -o dist/browser/asciidoctor-remote-include-processor.js",
+    "dist:node": "mkdir -p dist/node && cp src/**.js dist/node/",
+    "prepublishOnly": "node tasks/prepublish.js",
+    "postpublish": "node tasks/postpublish.js"
+  },
+  "devDependencies": {
+    "asciidoctor.js": "^1.5.9",
+    "browserify": "^16.2.3",
+    "chai": "^4.2.0",
+    "dirty-chai": "^2.0.1",
+    "mocha": "^8.0.1",
+    "standard": "^14.3.3"
+  },
+  "peerDependencies": {
+    "asciidoctor.js": "1.5.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feelpp/asciidoctor-remote-include-processor.git"
+  },
+  "keywords": [
+    "asciidoctor",
+    "processor",
+    "javascript",
+    "extension"
+  ],
+  "author": "Christophe Prud'homme (https://github.com/prudhomm)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/feelpp/asciidoctor-remote-include-processor/issues"
+  },
+  "homepage": "https://github.com/feelpp/asciidoctor-remote-include-processor#readme",
+  "publishConfig": {
+    "access": "public"
+  }
+}
