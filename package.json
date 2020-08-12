@@ -1,6 +1,6 @@
 {
   "name": "@feelpp/asciidoctor-remote-include-processor",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Asciidoctor remote include processor extension",
   "main": "dist/node/asciidoctor-remote-include-processor.js",
   "browser": "dist/browser/asciidoctor-remote-include-processor.js",
