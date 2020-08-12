@@ -3,6 +3,8 @@
 :uri-asciidoctorjs: https://github.com/asciidoctor/asciidoctor.js
 :uri-antora: https://docs.antora.org
 :antora: {uri-antora}[Antora]
+:uri-asciidoctor: https://www.asciidoctor.org
+:adoc: {uri-asciidoctor}[Asciidoctor]
 
 An extension for {uri-asciidoctorjs}[Asciidoctor.js] that allows to include remote files in {antora}.
 
@@ -68,3 +70,12 @@ which gives:
 ----
 include::https://raw.githubusercontent.com/feelpp/asciidoctor-remote-include-processor/master/test/helloworld.cpp[tag=hello]
 ----
+
+== Acknowledgments
+
+* https://github.com/djencks[@Djenks] on Gitter Antora/users for his many suggestions and explanations
+* https://github.com/Mogztter[@Mozgtter] for https://github.com/Mogztter/asciidoctor-emoji[asciidoctor-emoji] which served as the template for this extension
+
+and of course
+
+* https://github.com/mojavelinux[@mojavelinux] for the awesome work he does on {antora} and {adoc}.
