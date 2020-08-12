@@ -35,9 +35,29 @@ In an Antora adoc page, include a remote file
 include::https://raw.githubusercontent.com/feelpp/asciidoctor-remote-include-processor/master/test/helloworld.cpp[]
 ----
 ```
+
 which gives:
 
 [source,cpp]
 ----
 include::https://raw.githubusercontent.com/feelpp/asciidoctor-remote-include-processor/master/test/helloworld.cpp[]
+----
+
+=== Include a remote file partially using tags
+
+In Asciidoctor we can include a source file partially using tags, see https://asciidoctor.org/docs/user-manual/#by-tagged-regions[here]. 
+The extension enable this very feature.
+
+```adoc
+[source,cpp]
+----
+include::https://raw.githubusercontent.com/feelpp/asciidoctor-remote-include-processor/master/test/helloworld.cpp[tag=hello]
+----
+``` 
+
+which gives:
+
+[source,cpp]
+----
+include::https://raw.githubusercontent.com/feelpp/asciidoctor-remote-include-processor/master/test/helloworld.cpp[tag=hello]
 ----
