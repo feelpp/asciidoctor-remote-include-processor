@@ -246,21 +246,20 @@ MathJax.Hub.Config({
 <div class="paragraph">
 <p>In an Antora adoc page, include a remote file</p>
 </div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-adoc hljs" data-lang="adoc">[source,cpp]
+<pre><code class="language-cpp">
+[source,cpp]
 ----
-#include &lt;iotream&gt;
+#include <iotream>
 
 int main(int argc, char** argv )
 {
   // tag::hello[]
-  std::cout &lt;&lt; "Hello World!" &lt;&lt; std::endl;
+  std::cout << "Hello World!" << std::endl;
   // end::hello[]
 }
-----</code></pre>
-</div>
-</div>
+----
+</code>
+</pre>
 <div class="paragraph">
 <p>which gives:</p>
 </div>
@@ -283,14 +282,14 @@ int main(int argc, char** argv )
 <p>In Asciidoctor we can include a source file partially using tags, see <a href="https://asciidoctor.org/docs/user-manual/#by-tagged-regions">here</a>.
 The extension enable this very feature.</p>
 </div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-adoc hljs" data-lang="adoc">[source,cpp]
+<pre>
+<code class="language-cpp">
+[source,cpp]
 ----
-  std::cout &lt;&lt; "Hello World!" &lt;&lt; std::endl;
-----</code></pre>
-</div>
-</div>
+  std::cout << "Hello World!" << std::endl;
+----
+</code>
+</pre>
 <div class="paragraph">
 <p>which gives:</p>
 </div>
