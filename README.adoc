@@ -1,6 +1,42 @@
-= asciidoctor-remote-include-processor
+= :rocket: Asciidoctor Remote Include Processor Extension
+:uri-asciidoctorjs: https://github.com/asciidoctor/asciidoctor.js
 
-Remote include processor extension for asciidoctor
+ifdef::env-github[]
+image:https://github.com/feelpp/asciidoctor-remote-include-processor/workflows/npm-publish/badge.svg[npm-publish]
+image:https://img.shields.io/npm/v/@feelpp/asciidoctor-remote-include-processor[npmjs version, link=https://www.npmjs.com/package/@feelpp/asciidoctor-remote-include-processor]
+endif::[]
+
+An extension for {uri-asciidoctorjs}[Asciidoctor.js] that allows to include remote files.
+
+This is useful in antora.org[Antora] which does not enable this asciidoctor feature, see discussion https://gitlab.com/antora/antora/-/issues/246[here].
+
+== Install
+
+Install the dependencies:
+
+    $ npm install asciidoctor.js asciidoctor-remote-include-processor
+
+== Usage
+
+=== Register as an Asciidoctor extension in the Antora playbook of your website
+
+[source,yaml]
+----
+asciidoc:
+  extensions:
+  - "@feelpp/asciidoctor-remote-include-extension"
+----
+
+=== Include a remote file
+
+In an Antora adoc page, include a remote file
+
+```adoc
+[source,cpp]
+----
+include::https://raw.githubusercontent.com/feelpp/asciidoctor-remote-include-processor/master/test/helloworld.cpp[]
+----
+```
 
 ----
 .code here
