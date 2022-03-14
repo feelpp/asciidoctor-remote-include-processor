@@ -22,7 +22,7 @@
     "browserify": "^17.0.0",
     "chai": "^4.2.0",
     "dirty-chai": "^2.0.1",
-    "mocha": "^8.0.1",
+    "mocha": "^9.2.2",
     "standard": "^14.3.3"
   },
   "peerDependencies": {
